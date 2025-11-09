@@ -1,0 +1,90 @@
+{
+  "site": {
+    "tab_title": "Trevor Michel | Portfolio"
+  },
+
+  "header": {
+    "name": "Trevor Michel",
+    "linkedin_link": "https://www.linkedin.com/in/trevormichel",
+    "github_link": "https://github.com/TrevorMichel"
+  },
+
+  "colors": {
+    "background": "#F9FAFB",
+    "text": "#2E3440",
+
+    
+    "project_hover_text": "#1F252E",
+
+ 
+    "header_text": "#D08770",
+
+   
+    "header_top_bg": "#EAE8FF",
+    "header_bottom_bg": "#D8DEE9",
+
+    "button_bg": "#ECEFF4",
+    "button_bg_hover": "#E5E9F0",
+    "button_text": "#2E3440",
+    "button_text_hover": "#1F252E",
+
+    "special_hover_text": "#88C0D0"
+  },
+
+  "about": {
+    "title": "About Me",
+    "photo": null,
+    "description": "Short bio here."
+  },
+
+  "programming": {
+    "title": "Programming Experience",
+    "photo": null,
+    "skills": ["Python", "Polars", "Plotnine", "SQL", "Java"]
+  },
+
+  "projects": {
+    "title": "My Projects",
+    "list": [
+      {
+        "title": "Predictive Model",
+        "description": "A regression analysis using Python and scikit-learn.",
+        "url": "static/projects/Capture.PNG",
+        "image": "static/images/project1.jpg"
+      },
+      {
+        "title": "Portfolio Site",
+        "description": "This very site — Flask + config-driven design.",
+        "url": "static/projects/portfolio.html",
+        "image": "static/images/project2.jpg"
+      },
+      {
+        "title": "Whitepaper (PDF)",
+        "description": "A technical write-up.",
+        "url": "static/projects/whitepaper.pdf",
+        "image": "static/images/project3.jpg"
+      }
+    ]
+  },
+  "certifications": {
+  "title": "Certifications",
+  "list": [
+    {
+      "title": "AWS Certified Solutions Architect – Associate",
+      "description": "Validated cloud design skills across compute, storage, and networking.",
+      "url": "static/certs/aws-saa.pdf",
+      "image": "static/images/cert-aws.jpg"
+    },
+    {
+      "title": "Google Professional Data Engineer",
+      "description": "Designing, building, and operationalizing data processing systems.",
+      "url": "https://example.com/cert/google-data-engineer",
+      "image": "static/images/cert-gcp.jpg"
+    }
+  ]
+},
+
+  "footer": {
+    "text": "© 2025 Trevor Michel. All rights reserved."
+  }
+}

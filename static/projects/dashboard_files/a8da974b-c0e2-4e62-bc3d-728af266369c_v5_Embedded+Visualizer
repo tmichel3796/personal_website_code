@@ -1,0 +1,23 @@
+(async function() {
+    const PANORAMA_SERVER_URL = document.currentScript.dataset.ServerURL;
+    const panoramaIdentifierKey = document.currentScript.dataset.PanoramaID;
+    const PANORAMA_CDN_URL = document.currentScript.dataset.CDNURL;
+
+    window.PANORAMA_SERVER_URL = PANORAMA_SERVER_URL;
+    window.panoramaIdentifierKey = panoramaIdentifierKey;
+    window.PANORAMA_CDN_URL = PANORAMA_CDN_URL;
+
+    function loadScript(url) {
+        const script = document.createElement('script');
+        script.src = url;
+        document.head.appendChild(script);
+    }
+
+    try {
+        const response = await fetch(`${PANORAMA_SERVER_URL}/panorama-visualizer/d2l`, {cache: 'no-store'});
+        const scriptUrl = await response.text();
+        loadScript(scriptUrl);
+    } catch (e) {
+        console.error('Failed to load Panorama: ', e);
+    }
+})();
