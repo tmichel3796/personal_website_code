@@ -17,7 +17,8 @@
 
       /* headings + shared link accents */
       --header-text: {{ config.colors.header_text }};
-
+	  --title-text: {{ config.colors.title_text }};
+	  
       /* split header backgrounds (top=name, bottom=nav) */
       --header-top-bg: {{ config.colors.header_top_bg }};
       --header-bottom-bg: {{ config.colors.header_bottom_bg }};
@@ -35,7 +36,10 @@
       --special-hover-text: {{ config.colors.special_hover_text }};
     }
   </style>
+  
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;500&family=Noto+Serif:wght@600;700&display=swap" rel="stylesheet">
 
+ 
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 </head>
 <body>
@@ -45,7 +49,12 @@
     <div class="header-top">
       <div class="container">
         <h1 id="site-name">{{ config.header.name }}</h1>
-      </div>
+		<div class="header-links">
+		  <a class="header-link" href="{{ config.header.linkedin_link }}" target="_blank" rel="noopener">LinkedIn</a>
+		  <span aria-hidden="true">·</span>
+		  <a class="header-link" href="{{ config.header.github_link }}" target="_blank" rel="noopener">GitHub</a>
+		</div>
+      </div>  
     </div>
 
     <!-- Bottom band: centered nav + hamburger on small screens -->
