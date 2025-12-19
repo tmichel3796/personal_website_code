@@ -86,7 +86,7 @@
         "title": "",
         "description": "Click To See The Code Behind My Website: Website was built using AI assisted Programming, and server is ran on my home PC",
         "url": "https://github.com/tmichel3796/personal_website_code",
-        "image": "static/images/Project_background/website.png"
+        "image": "static/images/Project_background/website.PNG"
       },
       {
         "title": "",
@@ -121,43 +121,43 @@
       "title": "",
       "description": "Click To Validate: Datacamp Business Intelligence onboarding for Fastenal. Includes SQL, Power Bi, Data Governance, and Microsoft Fabric",
       "url": "https://www.datacamp.com/completed/statement-of-accomplishment/track/854d31284dd53fd4685ec837d15ea567d3dade03",
-      "image": "static/images/certificates/bi_onboarding.png"
+      "image": "static/images/certificates/bi_onboarding.PNG"
     },
 	{
       "title": "",
       "description": "Click To Validate: Datacamp Visualization Analyst onboarding for Fastenal. Includes courses in data management, modeling, and creating visualizations in Power BI",
       "url": "https://www.datacamp.com/completed/statement-of-accomplishment/track/9c6fa31448d5a25204b46d4849fe45e758f2f708?utm_medium=organic_social&utm_campaign=sharewidget&utm_content=soa&utm_source=copylink",
-      "image": "static/images/certificates/data_visualization_analyst.png"
+      "image": "static/images/certificates/data_visualization_analyst.PNG"
     },
     {
       "title": null,
       "description": "Click To Validate: 6 month certificate in R, SQL, Tableau, and cleaning data",
       "url": "https://www.coursera.org/account/accomplishments/professional-cert/4J2HVATVAA2L",
-      "image": "static/images/certificates/google_data_analytics.png"
+      "image": "static/images/certificates/google_data_analytics.PNG"
     },
 	{
       "title": null,
       "description": "Click To Validate: Microsoft Access Queries",
       "url": "https://www.linkedin.com/learning/certificates/cb25c106b72adf59d21577e6dd1fd05c6a082c380f1a34eef3342cbe3eb75857?trk=share_certificate",
-      "image": "static/images/certificates/accessqueries.png"
+      "image": "static/images/certificates/accessqueries.PNG"
     },
 	{
       "title": null,
       "description": "Click To Validate: Microsoft Access Essentials",
       "url": "https://www.linkedin.com/learning/certificates/1b6e02d7617e1f61e98c7d58275122b4f072ac982a5dd4f51749172ff3568711?trk=share_certificate",
-      "image": "static/images/certificates/access_essentials.png"
+      "image": "static/images/certificates/access_essentials.PNG"
     },
 	{
       "title": null,
       "description": "Click To Validate: Database Programming Foundations",
       "url": "https://www.linkedin.com/learning/certificates/a9354965f78edad267e84aae7de95bbea2d8b2c1023c122e8a0c48fe1b0695c9?trk=share_certificate",
-      "image": "static/images/certificates/database_programming_foundations.png"
+      "image": "static/images/certificates/database_programming_foundations.PNG"
     },
 	    {
       "title": null,
       "description": "Click To Validate: Python GUI manipulation course describing how to use python to automate routine tasks",
       "url": "https://www.udemy.com/certificate/UC-9174e553-f89a-4163-8137-ca4fe5ebc5de",
-      "image": "static/images/certificates/automate_the_boring_stuff.png"
+      "image": "static/images/certificates/automate_the_boring_stuff.PNG"
     },
     {
       "title": null,
