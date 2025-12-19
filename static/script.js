@@ -17,6 +17,53 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
+  // Email copy/hover logic
+  const emailEl = $('#header-email');
+  if (emailEl) {
+    let bubbleTimeout = null;
+    let lastBubbleText = emailEl.getAttribute('data-hover-text');
+    const showBubble = (text) => {
+      emailEl.setAttribute('data-hover-text', text || lastBubbleText);
+      emailEl.setAttribute('data-show-bubble', 'true');
+      clearTimeout(bubbleTimeout);
+    };
+    const hideBubble = () => {
+      emailEl.setAttribute('data-hover-text', lastBubbleText);
+      emailEl.setAttribute('data-show-bubble', 'false');
+    };
+    emailEl.addEventListener('mouseenter', () => showBubble(lastBubbleText));
+    emailEl.addEventListener('mouseleave', hideBubble);
+    emailEl.addEventListener('focus', () => showBubble(lastBubbleText));
+    emailEl.addEventListener('blur', hideBubble);
+    emailEl.addEventListener('mousedown', (e) => {
+      // Prevent text selection on click
+      e.preventDefault();
+    });
+    emailEl.addEventListener('click', (e) => {
+      const email = emailEl.getAttribute('data-email');
+      const successText = emailEl.getAttribute('data-success-text') || 'Copy successful!';
+      if (email) {
+        navigator.clipboard.writeText(email);
+        // Show bubble with success text for 1.2s
+        showBubble(successText);
+        clearTimeout(bubbleTimeout);
+        bubbleTimeout = setTimeout(hideBubble, 1200);
+      }
+      // Remove any selection highlight
+      if (window.getSelection) {
+        const sel = window.getSelection();
+        if (sel) sel.removeAllRanges();
+      }
+    });
+    // Keyboard accessibility: Enter/Space copies
+    emailEl.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        emailEl.click();
+      }
+    });
+  }
+
   /* ============================
      Nav buttons (desktop)
      ============================ */

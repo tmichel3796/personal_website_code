@@ -1,3 +1,12 @@
+/* Programming subheader style */
+.programming-subheader {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 1.15rem;
+  color: var(--header-text);
+  font-family: 'Noto Serif', serif;
+  font-weight: 600;
+}
 /* =========================================================
    Base / Tokens (all colors come from variables in index.html)
    ========================================================= */
@@ -52,6 +61,9 @@ h1, h2, h3, .section-title {
   text-decoration: none;
   padding: 2px 4px;
   border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.15s, color 0.15s;
 }
 .header-link:hover,
 .header-link:focus-visible {
@@ -60,6 +72,29 @@ h1, h2, h3, .section-title {
   background: rgba(0,0,0,0.04);
   background: color-mix(in srgb, var(--button-bg) 70%, transparent);
   outline: none;
+}
+
+/* Email hover/copy bubble */
+.header-email {
+  user-select: none;
+}
+.header-email[data-show-bubble="true"]::after {
+  content: attr(data-hover-text);
+  position: absolute;
+  left: 50%;
+  top: 110%;
+  transform: translateX(-50%);
+  background: var(--button-bg-hover);
+  color: var(--button-text-hover);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.95em;
+  white-space: nowrap;
+  z-index: 10;
+  opacity: 1;
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: opacity 0.15s;
 }
 
 /* Bottom band: centered nav, hamburger on the right */

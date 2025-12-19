@@ -7,6 +7,23 @@
     content="width=device-width, initial-scale=1, viewport-fit=cover"
   />
   <title>{{ config.site.tab_title }}</title>
+{# === Single-config favicon support === #}
+{% set fav = config.site.get('favicon') %}
+{% if fav %}
+  {% set ext = fav.rsplit('.', 1)[-1] | lower %}
+  {% if ext == 'svg' %}
+    <link rel="icon" href="{{ fav }}" type="image/svg+xml">
+  {% elif ext == 'png' %}
+    <link rel="icon" href="{{ fav }}" type="image/png">
+  {% elif ext == 'ico' %}
+    <link rel="icon" href="{{ fav }}" sizes="any">
+  {% elif ext in ['jpg', 'jpeg'] %}
+    <link rel="icon" href="{{ fav }}" type="image/jpeg">
+  {% else %}
+    <link rel="icon" href="{{ fav }}">
+  {% endif %}
+{% endif %}
+
 
   <!-- Design tokens: all colors pulled from config.json -->
   <style>
@@ -49,11 +66,13 @@
     <div class="header-top">
       <div class="container">
         <h1 id="site-name">{{ config.header.name }}</h1>
-		<div class="header-links">
-		  <a class="header-link" href="{{ config.header.linkedin_link }}" target="_blank" rel="noopener">LinkedIn</a>
-		  <span aria-hidden="true">·</span>
-		  <a class="header-link" href="{{ config.header.github_link }}" target="_blank" rel="noopener">GitHub</a>
-		</div>
+        <div class="header-links">
+          <a class="header-link" href="{{ config.header.linkedin_link }}" target="_blank" rel="noopener">LinkedIn</a>
+          <span aria-hidden="true">·</span>
+          <span class="header-link header-email" id="header-email" tabindex="0" data-email="{{ config.header.email }}" data-hover-text="{{ config.header.email_hover_text }}" data-success-text="{{ config.header.email_copy_success }}">{{ config.header.email }}</span>
+          <span aria-hidden="true">·</span>
+          <a class="header-link" href="{{ config.header.github_link }}" target="_blank" rel="noopener">GitHub</a>
+        </div>
       </div>  
     </div>
 
@@ -107,7 +126,15 @@
         />
       {% endif %}
 
-      <p class="section-text">{{ config.about.description }}</p>
+      {% if config.about.description is sequence and config.about.description is not string %}
+        {% for section in config.about.description %}
+          <div class="section-text">{{ section | safe }}</div>
+        {% endfor %}
+      {% else %}
+        <div class="section-text">{{ config.about.description | safe }}</div>
+      {% endif %}
+
+
     </section>
 
     <!-- Programming (optional image above skills) -->
@@ -122,12 +149,15 @@
         />
       {% endif %}
 
-      {% if config.programming.skills and config.programming.skills|length > 0 %}
-        <ul class="skills">
-          {% for skill in config.programming.skills %}
-            <li class="skill">{{ skill }}</li>
-          {% endfor %}
-        </ul>
+      {% if config.programming.sections and config.programming.sections|length > 0 %}
+        {% for section in config.programming.sections %}
+          <h3 class="programming-subheader">{{ section.subheader | safe }}</h3>
+          <ul class="skills">
+            {% for item in section["items"] %}
+              <li class="skill">{{ item }}</li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
       {% endif %}
     </section>
 
