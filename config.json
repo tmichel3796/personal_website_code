@@ -7,7 +7,7 @@
     "name": "Trevor Michel",
     "linkedin_link": "https://www.linkedin.com/in/trevor-michel-0a4b46128",
     "github_link": "https://github.com/tmichel3796",
-    "email": "info@trevormichel.com",
+    "email": "Info@TrevorMichel.com",
     "email_hover_text": "Copy email",
     "email_copy_success": "Copy successful!"
   },
@@ -51,7 +51,7 @@
       },
       {
         "subheader": "Python Packages",
-        "items": [ "Polars","PySpark","Pandas","Pytorch", "scikit-learn",  "Delta Lake","Numpy","Plotnine", "seaborn"]
+        "items": [ "Polars","PySpark","Pandas","Pytorch", "Scikit-Learn",  "Delta Lake","Numpy","Plotnine", "Seaborn"]
       },      
       {
         "subheader": "Software",
@@ -66,9 +66,26 @@
     "list": [
       {
         "title": "RESUME",
-        "description": "Click To See My Current Resume:",
-        "url": "static/projects/Resume_27.pdf",
+        "description": "Click To See My Current Resume",
+        "url": "static/projects/Resume_28.pdf",
         "image": "static/images/Project_background/resume.png"
+      },
+      {
+        "title": "",
+        "description": "Click To See My Final Project for Unstructured Learning: Uses clustering, and Principal Component Analysis for dimension reduction using R",
+        "url": "https://rpubs.com/tmichel3796/LabelingEagle_Flight_Charecteristics_From_Unstructered_Data",
+        "image": "static/images/Project_background/eagle_flight.png"
+      },
+      {
+        "title": "",
+        "description": "Click To See My Data Management Skills: Use Polars to Systematically download, join, and union over a hundred tables of data",
+        "url": "https://github.com/tmichel3796/Data_Management_At_Scale_MidTerm_Project",
+        "image": "static/images/Project_background/systematic_100.png"
+      },      {
+        "title": "",
+        "description": "Click To See My Data Management Skills: See how I explore, and Manage large datasets while memory limited. Includes machine learning analysis with Random Forest in scikitlearn",
+        "url": "https://github.com/tmichel3796/Data-Management-At-Scale/tree/main",
+        "image": "static/images/Project_background/dsci_326_Final_Project.png"
       },
       {
         "title": "",
@@ -78,19 +95,13 @@
       },
       {
         "title": "",
-        "description": "Click To See My Data Management Skills: See how I explore, and Manage large datasets while memory limited. Includes machine learning analysis with Random Forest in scikitlearn.",
-        "url": "https://github.com/tmichel3796/Data-Management-At-Scale/tree/main",
-        "image": "static/images/Project_background/dsci_326_Final_Project.png"
-      },
-      {
-        "title": "",
-        "description": "Click To See The Code Behind My Website: Website was built using AI assisted Programming, and server is ran on my home PC",
+        "description": "Click To See The Code Behind My Website: Website was built using AI assisted Programming to challenge myself to program in HTML",
         "url": "https://github.com/tmichel3796/personal_website_code",
         "image": "static/images/Project_background/website.PNG"
       },
       {
         "title": "",
-        "description": "Click To Explore Interactive Chart: The goal with this chart was to explore Tableau interactive charts",
+        "description": "(PC only) Click To Explore Interactive Chart: The goal with this chart was to explore Tableau interactive charts",
         "url": "https://public.tableau.com/app/profile/trevor.michel/viz/finalversion_17464796764780/combiningcharts",
         "image": "static/images/Project_background/ufo_sightings.png"
       },
@@ -108,7 +119,7 @@
       },
       {
         "title": "",
-        "description": "Click To See Full Size: The goal in class was to create charts that tell a combined story, but I have reason to question the validity of the provided data.",
+        "description": "Click To See Full Size: The goal in class was to create charts that tell a combined story, but I have reason to question the validity of the provided data",
         "url": "static/images/Project_background/Japanese.jpg",
         "image": "static/images/Project_background/Japanese.jpg"
       }
@@ -117,6 +128,12 @@
   "certifications": {
   "title": "Certifications",
   "list": [
+  	{
+      "title": "",
+      "description": "Click To Validate: Datacamp Deep Learning track where I learned about convolutional models, LLM creation, and transformer models",
+      "url": "https://www.datacamp.com/completed/statement-of-accomplishment/track/e2212bedbc74b2d403ad587c6c2fb087158176de",
+      "image": "static/images/certificates/deep_learning.PNG"
+    },
   	{
       "title": "",
       "description": "Click To Validate: Datacamp Business Intelligence onboarding for Fastenal. Includes SQL, Power Bi, Data Governance, and Microsoft Fabric",
@@ -169,6 +186,6 @@
   ]
 },
   "footer": {
-    "text": "© 2025 Trevor Michel. All rights reserved."
+    "text": "Thank you for viewing my website!"
   }
 }
