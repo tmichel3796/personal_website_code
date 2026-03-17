@@ -37,7 +37,8 @@
   },
   "programming": {
     "title": "Programming Experience",
-    "photo": null,
+    "photo": "About Me",
+    "photo": "static/images/trevor_michel2.jpg",
     "sections": [
       {
         "subheader": "Machine Learning & AI For Data Science",
@@ -128,6 +129,12 @@
   "certifications": {
   "title": "Certifications",
   "list": [
+  	{
+      "title": "",
+      "description": "Click To Validate: Datacamp track where I learned about using Reinforcement Learning",
+      "url": "https://www.datacamp.com/completed/statement-of-accomplishment/track/d9ae9b2f3d5c9cae43ed4a12da28be40fe768f48",
+      "image": "static/images/certificates/reinforcement_learning.PNG"
+    },
   	{
       "title": "",
       "description": "Click To Validate: Datacamp Deep Learning track where I learned about convolutional models, LLM creation, and transformer models",
