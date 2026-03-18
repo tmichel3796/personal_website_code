@@ -19,3 +19,29 @@ startup instructions:
 	3. run the command
 		- gunicorn app:app
 	4. a link to the website will be provided
+
+
+DOCKER STARTUP (OPTIONAL, DOES NOT CHANGE .BAT FLOW)
+
+If you want to run this site in a container, you can do it separately from the existing
+WSL + conda startup path. The file start-may-not-work.bat remains unchanged.
+
+1. Build the image from the project root:
+	docker build -t personal-website .
+
+2. Run the container:
+	docker run --rm -p 5000:5000 --name personal-website personal-website
+
+3. Open in browser:
+	http://localhost:5000
+
+Notes:
+- This container runs gunicorn with app:app, matching the project's existing deployment style.
+- If you edit code, rebuild the image before running again.
+
+Windows quick start for Docker:
+- Double-click start-docker.bat from the project root.
+- This will build and run the container on http://localhost:5000.
+
+Important:
+- start-may-not-work.bat uses WSL + conda and does not start Docker.
