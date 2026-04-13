@@ -68,21 +68,28 @@
       {
         "title": "RESUME",
         "description": "Click To See My Current Resume",
-        "url": "static/projects/Resume_28.pdf",
+        "url": "static/projects/Resume_29.pdf",
         "image": "static/images/Project_background/resume.png"
       },
       {
         "title": "",
-        "description": "Click To See My Final Project for Unstructured Learning: Uses clustering, and Principal Component Analysis for dimension reduction using R",
-        "url": "https://rpubs.com/tmichel3796/LabelingEagle_Flight_Charecteristics_From_Unstructered_Data",
-        "image": "static/images/Project_background/eagle_flight.PNG"
+        "description": "Click To See My SQL Skills: Conduct analysis using SQL to find outliers in farmer financial aid disbursements.",
+        "url": "https://github.com/tmichel3796/SQL_midterm_farmer_aid_outliers/tree/main",
+        "image": "static/images/Project_background/SQL.jpg"
       },
       {
         "title": "",
         "description": "Click To See My Data Management Skills: Use Polars to Systematically download, join, and union over a hundred tables of data",
         "url": "https://github.com/tmichel3796/Data_Management_At_Scale_MidTerm_Project",
         "image": "static/images/Project_background/systematic_100.PNG"
-      },      {
+      },
+	  {
+        "title": "",
+        "description": "Click To See My Final Project for Unstructured Learning: Uses clustering, and Principal Component Analysis for dimension reduction using R",
+        "url": "https://rpubs.com/tmichel3796/LabelingEagle_Flight_Charecteristics_From_Unstructered_Data",
+        "image": "static/images/Project_background/eagle_flight.PNG"
+      },
+      {
         "title": "",
         "description": "Click To See My Data Management Skills: See how I explore, and Manage large datasets while memory limited. Includes machine learning analysis with Random Forest in scikitlearn",
         "url": "https://github.com/tmichel3796/Data-Management-At-Scale/tree/main",
